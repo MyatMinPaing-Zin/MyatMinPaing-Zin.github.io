@@ -5,36 +5,99 @@
     <title>Bootstrap 5 Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="portfolio, software developer, myatminpaingzin, web developer, fullstack developer, backend developer">
+    <meta name="description" content="This portfolio webpages is for personal use only for Myat Min Paing Zin. ">
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font-awesome 6.5.1 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <header class="bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="card rounded p-0" style="width: 30%;">
+                    <img class="" src="myatminpaingzin.jpeg" alt="">
+                </div>
 
-    <div class="container-fluid p-5 bg-primary text-white text-center">
-        <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect!</p>
-    </div>
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Column 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
             </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
+            <h1 class="text-light">Myat Min Paing Zin</h1>
+            <p class="text-white">Full Stack Software Developer</p>
         </div>
-    </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <h2>About Me</h2>
+            <p class="">I am a qualified and professional web developer with 3 years of experience in Software
+                Development and website design. Strong creative and analytical skills. Team player with an eye for
+                detail.</p>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project Name 1</h3>
+                            <p class="card-text">Description of the project.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project Name 2</h3>
+                            <p class="card-text">Description of the project.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="card p-4">
+                <h2>Contact Me</h2>
+                <p>You can reach me at
+                    <a href="mailto:myatminpaingzin94515@gmail.com">myatminpaingzin94515@gmail.com</a> or
+                    connect with me on mobile <a href="tel:+6584335310">+6584335310</a>.
+                </p>
+                <div class="form-label fw-bold">Socail media</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-1 d-flex justify-content-center"><i class="fa-brands fa-github"></i></div>
+                        <div class="col-sm-11">
+                            <a href="https://github.com/myatminpaingzin">https://github.com/myatminpaingzin</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 d-flex justify-content-center"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="col-sm-11">
+                            <a href="https://github.com/myatminpaingzin">www.linkedin.com/in/myat-min-paing-zin</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 d-flex justify-content-center"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="col-sm-11">facebook.com</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark py-3">
+        <div class="container text-center">
+            <p class="text-light">&copy; 2024 Myat Min Paing Zin. All rights reserved.</p>
+        </div>
+    </footer>
+
 
 </body>
 
