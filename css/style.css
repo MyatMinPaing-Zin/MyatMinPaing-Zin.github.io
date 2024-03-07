@@ -204,3 +204,13 @@ section {
 .cv_btn:hover{
     box-shadow: none;
 }
+
+/* about section */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+
+}
