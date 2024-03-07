@@ -13,7 +13,7 @@
 
 :root{
     --bg-color: #191f36;
-    --snd-bf-color: #262B40;
+    --snd-bg-color: #262B40;
     --text-color: #fff;
     --main-color: #59B2F4;
 }
@@ -54,6 +54,7 @@ section {
 }
 
 .navbar a{
+    text-decoration: none;
     font-size: 1.5rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -89,6 +90,56 @@ section {
     color: var(--main-color);
 }
 
+.animated_text .position{
+    position: relative;
+}
+.animated_text .position::before{
+    content: "Software Developer";
+    animation: words 20s infinite;
+}
+@keyframes words {
+    0%,20%{
+        content: 'Software Developer';
+    }
+    21%,40%{
+        content: 'Web Developer';
+    }
+    41%,60%{
+        content: 'Full Stack Developer';
+    }
+    61%,80%{
+        content: 'Back-End Devloper';
+    }
+    81%,100%{
+        content: 'Front-End Developer';
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
+.animated_text .position::after{
+    content: "";
+    position: absolute;
+    width: calc( 100% + 8px);
+    height: 100%;
+    background-color: var(--bg-color);
+    border-left: 0.3rem solid var(--main-color);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 0.3rem solid var(--bg-color);
+    }
+}
+
 .home_content h1{
     font-size: 5.6rem;
     font-weight: 700;
@@ -111,4 +162,29 @@ section {
     100%{
         transform: translateY(0);
     }
+}
+
+.home_content p{
+    font-size: 1.6rem;
+}
+.social_media a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent ;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+.social_media a:hover{
+    background-color: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    transform: translateY(-0.5rem);
 }
