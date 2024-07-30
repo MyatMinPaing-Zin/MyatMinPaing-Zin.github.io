@@ -1,6 +1,6 @@
 function downloadPDF() {
     // URL to your PDF file
-    var pdfURL = 'Myat_Min_Paing_Zin_resume.pdf';
+    var pdfURL = 'mmpz_resume.pdf';
 
     // Create a temporary link element
     var link = document.createElement('a');
